@@ -1,0 +1,47 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('system/settings') ?>"><?= e(trans('system::lang.settings.menu_label')) ?></a></li>
+        <li><?= e(trans($this->pageTitle)) ?></li>
+    </ul>
+<?php Block::endPut() ?>
+
+<?= Form::open(['id' => 'messagesForm', 'class'=>'layout-item stretch layout-column', 'onsubmit'=>'return false']) ?>
+
+    <div id="messagesContainer">
+        <div class="list-header">
+            <h2>Image Optimizer Settings</h2>
+
+            <p class="description">
+                Below is a list of optimizers supported by Image Optimizer. Please make sure they're correctly installed on your system or the optimizer will not be able to functiona correctly.
+            </p>
+        </div>
+
+        <table class="table data" data-control="rowlink">
+            <thead>
+                <tr>
+                    <th class="list-cell-name-name list-cell-type-text">
+                        <span>Binary</span>
+                    </th>
+                    <th class="list-cell-name-description list-cell-type-switch">
+                        <span>Installed</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach (\Flynsarmy\ImageOptimizer\Classes\Optimization::instance()->checkOptimizers() as $binary => $installed): ?>
+                <tr class="rowlink" tabindex="0">
+                    <td class="list-cell-index-1 list-cell-name-binary list-cell-type-text">
+                        <?= $binary ?>
+                    </td>
+                    <td class="list-cell-index-2 list-cell-name-installed list-cell-type-switch">
+                        <?= $installed ? 'Yes' : 'No' ?>
+                    </td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+
+<?= Form::close() ?>
+
+
