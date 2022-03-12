@@ -1,16 +1,9 @@
-<?php namespace Flynsarmy\ImageOptimizer\Controllers;
+<?php
 
-use Backend\Behaviors\ImportExportController;
-use Lang;
-use Flash;
-use Winter\Translate\Models\MessageExport;
-use Request;
+namespace Flynsarmy\ImageOptimizer\Controllers;
+
 use BackendMenu;
 use Backend\Classes\Controller;
-use Winter\Translate\Models\Message;
-use Winter\Translate\Models\Locale;
-use Winter\Translate\Classes\ThemeScanner;
-use System\Helpers\Cache as CacheHelper;
 use System\Classes\SettingsManager;
 
 /**
