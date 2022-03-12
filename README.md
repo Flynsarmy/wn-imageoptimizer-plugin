@@ -1,4 +1,4 @@
-# Image Optimizer for Winter CMS
+# Image Optimizer for Winter CMS ![Build Status](https://github.com/flynsarmy/wn-imageoptimizer-plugin/actions/workflows/ci-php.yml/badge.svg)
 
 Automatically optimizes images on upload/resize.
 
