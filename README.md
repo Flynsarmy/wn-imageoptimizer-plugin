@@ -4,7 +4,7 @@ Automatically optimizes images on upload/resize.
 
 ## Description
 
-This plugin uses [spatie/image-optimizer](https://github.com/spatie/image-optimizer) to optimize images on upload and resize. It requires various binaries to be installed on your system to handle the optimizations. At the time of writing it supports the following image types:
+This plugin uses [spatie/image-optimizer](https://github.com/spatie/image-optimizer) to optimize images on upload and resize. It requires various binaries to be installed on your system to handle the optimizations. At the time of writing this plugin supports the following image types:
 
 * JPG - [JpegOptim](http://freecode.com/projects/jpegoptim)
 * PNG - [Pngquant 2](https://pngquant.org/), [Optipng](http://optipng.sourceforge.net/)
