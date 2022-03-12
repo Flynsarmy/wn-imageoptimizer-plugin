@@ -2,6 +2,12 @@
 
 Automatically optimizes images on upload/resize.
 
+## Installation
+
+* `git clone` to */plugins/flynsarmy/imageoptimizer*
+* `composer update`
+* `php artisan plugin:refresh Flynsarmy.ImageOptimizer`
+
 ## Description
 
 This plugin uses [spatie/image-optimizer](https://github.com/spatie/image-optimizer) to optimize images on upload and resize. It requires various binaries to be installed on your system to handle the optimizations. At the time of writing this plugin supports the following image types:
