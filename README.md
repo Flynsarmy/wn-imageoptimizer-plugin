@@ -27,4 +27,4 @@ A settings page has been provided at *Backend - Settings - Image Optimizer* whic
 Two artisan commands have been added:
 
 1. `php artisan imageoptimizer:optimizers` lists installed optimizers.
-1. `php artisan imageoptimizer:optimizer <filepath>` optimizes an image at a given path.
+1. `php artisan imageoptimizer:optimize <filepath>` optimizes an image at a given path.
