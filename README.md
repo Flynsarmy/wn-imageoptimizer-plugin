@@ -21,3 +21,10 @@ This plugin uses [spatie/image-optimizer](https://github.com/spatie/image-optimi
 For full details, see [spatie/image-optimizer](https://github.com/spatie/image-optimizer)
 
 A settings page has been provided at *Backend - Settings - Image Optimizer* which lists supported binaries and whether or not they're installed on the system.
+
+## Command Line
+
+Two artisan commands have been added:
+
+1. `php artisan imageoptimizer:optimizers` lists installed optimizers.
+1. `php artisan imageoptimizer:optimizer <filepath>` optimizes an image at a given path.
